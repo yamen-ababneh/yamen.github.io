@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #1B1A55;
+        }
+        
+        header {
+            background-color: #070F2B;
+            color: #4845ec;
+            text-align: center;
+            padding: 20px;
+        }
+        
+        nav {
+            background-color: #535C91;
+            text-align: center;
+            padding: 10px;
+        }
+        
+        nav a {
+            color: #9290C3;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #1F2544;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        .profile-img {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            width: 200px;
+            height: 200px;
+            object-fit: cover;
+        }
+        
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+        
+        table,
+        th,
+        td {
+            border: 1px solid #535C91;
+            padding: 8px;
+            text-align: left;
+        }
+        
+        th {
+            background-color: #4845ec;
+        }
+        
+        form {
+            margin-top: 20px;
+        }
+        
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #535C91;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        
+        input[type="submit"] {
+            background-color: #333;
+            color: #535C91;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        input[type="submit"]:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>YAMEN MOHAMMAD FALAH ABABNEH</h1>
+        <h2>Major: CYBER SECURITY</h2>
+        <h3>Soft Skills:
+        </h3>
+        <h4>1. Communication skills 2. Teamwork 3. Problem solving 4. Driving</h4>
+        <h4>5. Emotional intelligence 6. Creativity 7. Resolving conflicts and creating them from scratch 8. Critical thinking </h4>
+        <h4>9. Interpersonal skills 10. Self-motivation 11. Flexibility 12. Cultural awareness 13. Negotiation skillsx</h4>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+    <div class="container">
+        <h2>About Me</h2>
+        <img src="yamen.jpg" alt="Picture" class="profile-img">
+        <table>
+            <tr>
+                <th>Programming Language</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><a href="python.org">Python</a></td>
+                <td>Python is a high-level programming language known for its simplicity and readability. Created by Guido van Rossum and first released in 1991, Python has since become one of the most popular programming languages in the world.</td>
+            </tr>
+            <tr>
+                <td><a href="https://cplusplus.com/">CPP</a></td>
+                <td>C++ is a general-purpose programming language that was developed as an extension of the C programming language. It was created by Bjarne Stroustrup at Bell Labs in the early 1980s. C++ adds object-oriented programming (OOP) features to
+                    C, allowing for the creation of more complex and modular programs.</td>
+            </tr>
+        </table>
+        <h2>Email: <a href="mailto:ymababneh21@cit.just.edu.jo">YAMEN</a></h2>
+    </div>
+    <div id="contact" class="container">
+        <h2>Contact Me</h2>
+        <form action="#" method="post">
+            <label for="fullname">Full Name:</label>
+            <input type="text" id="fullname" name="fullname" required>
+            <label for="email">Email Address:</label>
+            <input type="email" id="email" name="email" required>
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country">
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" rows="4" required></textarea>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+</body>
+
+</html>
